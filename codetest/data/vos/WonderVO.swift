@@ -8,7 +8,7 @@
 
 import Foundation
 import RealmSwift
-import GoogleMaps
+
 class WonderVO: Object,Codable {
     
     @objc dynamic var id:Int = 0
@@ -29,10 +29,3 @@ class WonderVO: Object,Codable {
     }
 }
 
-extension WonderVO {
-    
-    func toCLLocationCoordinate2D() -> CLLocationCoordinate2D{
-        
-        return  CLLocationCoordinate2D(latitude: CLLocationDegrees(exactly:  Double(lat)!)!, longitude: CLLocationDegrees(exactly:  Double(long)!)!)
-    }
-}

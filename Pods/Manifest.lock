@@ -1,10 +1,5 @@
 PODS:
   - Alamofire (4.9.1)
-  - GoogleMaps (3.7.0):
-    - GoogleMaps/Maps (= 3.7.0)
-  - GoogleMaps/Base (3.7.0)
-  - GoogleMaps/Maps (3.7.0):
-    - GoogleMaps/Base
   - Kingfisher (5.9.0):
     - Kingfisher/Core (= 5.9.0)
   - Kingfisher/Core (5.9.0)
@@ -25,7 +20,6 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
-  - GoogleMaps
   - Kingfisher
   - RealmSwift
   - RxCocoa
@@ -35,7 +29,6 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
-    - GoogleMaps
     - Kingfisher
     - Realm
     - RealmSwift
@@ -46,7 +39,6 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
-  GoogleMaps: 55da829c68aa931f3ae982b9e341cc2f3d89c587
   Kingfisher: ff98240aebb7302bdc4f1ecd701761030ce18b16
   Realm: 38e9dcb19104b58407167d99f70d4995f7c16023
   RealmSwift: 3183cc1ad48378fbcd634311b22c0e6c44021152
@@ -55,6 +47,6 @@ SPEC CHECKSUMS:
   RxRelay: 89d54507f4fd4d969e6ec1d4bd7f3673640b4640
   RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
 
-PODFILE CHECKSUM: dc697dcb88781c98c9e5332d229904e125323dc2
+PODFILE CHECKSUM: 33630a5600c217dea40af078ebb251dbd625b2fa
 
 COCOAPODS: 1.8.4

@@ -13,7 +13,7 @@ target 'codetest' do
   pod 'RxCocoa'
   pod 'RealmSwift'
   pod 'RxRealm'
-  pod 'GoogleMaps'
+
 
   
   target 'codetestTests' do
