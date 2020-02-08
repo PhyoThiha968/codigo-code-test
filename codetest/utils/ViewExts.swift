@@ -8,6 +8,40 @@
 
 import Foundation
 import UIKit
+import Kingfisher
+
+extension UIImageView {
+    
+    func loadImageWithUrl(url:String) {
+        
+        let url = URL(string: url)
+        kf.indicatorType = .activity
+        kf.setImage(
+            with: url,
+            placeholder: UIImage(named: "placeholder"),
+            options: [
+                .scaleFactor(UIScreen.main.scale),
+                .transition(.fade(1)),
+                .cacheOriginalImage
+            ])
+        {
+            result in
+            switch result {
+            case .success(let value):
+                print("Task done for: \(value.source.url?.absoluteString ?? "")")
+            case .failure(let error):
+                print("Job failed: \(error.localizedDescription)")
+            }
+        }
+    }
+    
+    func addGradient(start:UIColor,end:UIColor){
+        let gradient = CAGradientLayer()
+        gradient.frame = bounds
+        gradient.colors = [start, end]
+        layer.insertSublayer(gradient, at: 0)
+    }
+}
 
 extension UITableView{
     

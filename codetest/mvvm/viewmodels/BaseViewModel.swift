@@ -12,6 +12,7 @@ import RxRelay
 
 class BaseViewModel {
     
-    var isLoading:BehaviorRelay<Bool?> = BehaviorRelay(value: nil)
+    var isLoadingObs:BehaviorRelay<Bool> = BehaviorRelay(value: false)
     var errorObs:BehaviorRelay<String?> = BehaviorRelay(value: nil)
+    let dataRepository:DataRepository = DataRepository.shared
 }

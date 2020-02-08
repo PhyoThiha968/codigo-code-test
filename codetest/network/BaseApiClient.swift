@@ -12,21 +12,16 @@ import RxSwift
 
 class BaseApiClient {
     
-    static let BASE_URL = "https://uk-collection-dev.digi-zaay.com.mm/api/"
+    static let BASE_URL = getConfig()?.apiurl ?? ""
     
-    func reuqestApiWithHeaders<T>(
+    func reuqestApi<T>(
         url:String,
         method:HTTPMethod,
         params:Parameters,
+        headers:HTTPHeaders? = nil,
         value: T.Type,
         encoding: ParameterEncoding = URLEncoding.default
     ) -> Observable<T>  where T : Codable {
-        
-        let headers: HTTPHeaders = [
-            "Authorization" : "Bearer " + ( ""),
-            "app-id" : "mRksMmN7TH-MeAmaTF2Fz",
-            "secret-key" : "86GML5Kz97kygJFQzwt7SpjrZeVXmY9KnU4GkUEn"
-        ]
         
 
         return Observable<T>.create { (observer) -> Disposable in

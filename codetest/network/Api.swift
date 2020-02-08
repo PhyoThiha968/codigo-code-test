@@ -7,6 +7,9 @@
 //
 
 import Foundation
+import RxSwift
+
 protocol Api {
     
+    func getAllWonders() -> Observable<WonderResponse>
 }

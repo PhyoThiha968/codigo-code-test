@@ -9,3 +9,4 @@
 import Foundation
 let ERROR_MSG_JSON_PARSE = "500 Internal server error"
 
+let API_GET_ALL_WONDERS = "bins/13g69v"
